@@ -62,7 +62,7 @@ def main():
         )
 
     # Save CSV
-    csv_path = "sim_sweep_4cards_1to50.csv"
+    csv_path = "sweeps/sim_sweep_4cards_1to50.csv"
     with open(csv_path, "w", newline="") as f:
         w = csv.writer(f)
         w.writerow(["target", "success_rate_percent", "trials", "num_cards", "max_val", "seed"])

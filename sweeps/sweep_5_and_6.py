@@ -78,12 +78,12 @@ def plot_results(results, num_cards, out_path):
 if __name__ == "__main__":
     print("\n--- 5 cards ---\n")
     r5 = run_sweep(5)
-    save_results(r5, "sweep_results_5cards.txt")
+    save_results(r5, "sweeps/sweep_results_5cards.txt")
     plot_results(r5, 5, "figures/sweep_5cards_1to200.png")
 
     print("\n--- 6 cards ---\n")
     r6 = run_sweep(6)
-    save_results(r6, "sweep_results_6cards.txt")
+    save_results(r6, "sweeps/sweep_results_6cards.txt")
     plot_results(r6, 6, "figures/sweep_6cards_1to200.png")
 
     print("\nDone.")

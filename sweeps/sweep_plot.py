@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Plot sweep results from sweep_results.txt, highlighting top 20% (40 targets)."""
+"""Plot sweep results from sweeps/sweep_results.txt, highlighting top 20% (40 targets)."""
 
 import re
 
@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 
 # Parse sweep_results.txt
 data = []
-with open("sweep_results.txt") as f:
+with open("sweeps/sweep_results.txt") as f:
     for line in f:
         m = re.match(r"\s+(\d+)\s+[\d,]+\s+[\d,]+\s+([\d.]+)%", line)
         if m:
